@@ -20,7 +20,7 @@ public class HealthCheckController {
     @GetMapping
     public ResponseEntity<Map<String, Object>> checkHealth() {
         Map<String, Object> response = new HashMap<>();
-        response.put("status", "Application is running");
+        response.put("status", "Application is running well");
         response.put("version", appVersion);
 
         return new ResponseEntity<>(response, HttpStatus.OK);
