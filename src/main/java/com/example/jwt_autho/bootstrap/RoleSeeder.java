@@ -24,6 +24,7 @@ public class RoleSeeder implements ApplicationListener<ContextRefreshedEvent> {
         this.loadRoles();
     }
 
+    // auto create roles when first time run the application
     private void loadRoles() {
         RoleEnum[] roleNames = new RoleEnum[] { RoleEnum.USER, RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN };
         Map<RoleEnum, String> roleDescriptionMap = Map.of(

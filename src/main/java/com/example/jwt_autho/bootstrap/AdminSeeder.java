@@ -37,6 +37,7 @@ public class AdminSeeder implements ApplicationListener<ContextRefreshedEvent> {
         this.createSuperAdministrator();
     }
 
+    // auto create admin account when run the application
     private void createSuperAdministrator() {
         RegisterUserDto userDto = new RegisterUserDto();
         userDto.setFullName("Super Admin");
